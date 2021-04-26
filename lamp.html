@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<div>
+    <img src="https://i.stack.imgur.com/b983w.jpg" id="lamp">
+</div>
+
+
+<script> 
+
+    document.getElementById('lamp').addEventListener("click", function(){
+    var image = document.getElementById('lamp').src;
+    var lightOff = "https://i.stack.imgur.com/b983w.jpg";
+    var lightOn = "https://i.stack.imgur.com/ybxlO.jpg";
+
+    if(image === lightOn) {
+        document.getElementById('lamp').src = lightOff;
+    } else {
+        document.getElementById('lamp').src = lightOn;
+    }
+
+});
+
+</script>
