@@ -2,21 +2,21 @@
 <meta charset="UTF-8">
 
 <div>
-    <img src="https://i.stack.imgur.com/b983w.jpg" id="lamp">
+    <img src="https://i.stack.imgur.com/b983w.jpg" id="bulb">
 </div>
 
 
 <script> 
 
-    document.getElementById('lamp').addEventListener("click", function(){
-    var image = document.getElementById('lamp').src;
+    document.getElementById('bulb').addEventListener("click", function(){
+    var image = document.getElementById('bulb').src;
     var lightOff = "https://i.stack.imgur.com/b983w.jpg";
     var lightOn = "https://i.stack.imgur.com/ybxlO.jpg";
 
     if(image === lightOn) {
-        document.getElementById('lamp').src = lightOff;
+        document.getElementById('bulb').src = lightOff;
     } else {
-        document.getElementById('lamp').src = lightOn;
+        document.getElementById('bulb').src = lightOn;
     }
 
 });
